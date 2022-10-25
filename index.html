@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/css/bulma-accordion.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="pageloader is-active"><span class="title">Pageloader</span></div>
+  <section class="hero is-primary is-fullheight" style="position: relative">
+    <div id="particles-js" style="height: 100vh; position: absolute;"></div>
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar is-transparent is-fixed-top">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="https://cssninjastudio.github.io/krypton/img/logo/krypton.svg" width="40" height="40"
+                alt="Logo">
+              Krypton
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Token
+              </a>
+              <a class="navbar-item">
+                ICO
+              </a>
+              <a class="navbar-item">
+                Roadmap
+              </a>
+              <a class="navbar-item">
+                Media
+              </a>
+              <span class="navbar-item">
+                <a class="button is-primary is-text has-no-text-decoraction">
+                  <span class="icon">
+                    <i class="fab fa-telegram-plane"></i>
+                  </span>
+                  <span>Telegram</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-primary is-signup is-skewed">
+                  <span>Register</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <div class="title is-1 is-spaced">Cryptocurrency Exchange Market</div>
+            <div class="subtitle is-5">
+              Cryptocurrency brought to the next level. Join our ICO for supercharged
+              rates.
+            </div>
+            <div class="buttons">
+              <a href="#" class="button is-primary is-medium"><span>Get started</span></a>
+              <a href="#" class="button is-primary is-medium"><span>Learn more</span></a>
+            </div>
+          </div>
+          <div class="column is-7">
+            <div class="image">
+              <img src="https://cssninjastudio.github.io/krypton/img/illustrations/buildings.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-centered">
+        <div class="container">
+          <ul>
+            <li>
+              <a>
+                <img src="https://cssninjastudio.github.io/krypton/img/clients/cryptomarket.svg" alt="" width="140">
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="https://cssninjastudio.github.io/krypton/img/clients/cryptomarket.svg" alt="" width="140">
+              </a>
+            </li>
+            <li>
+              <a>
+                <img src="https://cssninjastudio.github.io/krypton/img/clients/cryptomarket.svg" alt="" width="140">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container has-text-centered">
+      <div class="button is-success is-medium is-rounded">
+        Buy Tokens 20% off
+      </div>
+      <div class="subtitle is-5 my-3">
+        We Accept
+      </div>
+      <div class="buttons is-centered">
+        <div class="button is-icon is-static">
+          <div class="icon"><i class="fab fa-btc"></i></div>
+        </div>
+        <div class="button is-icon is-static">
+          <div class="icon"><i class="fab fa-btc"></i></div>
+        </div>
+        <div class="button is-icon is-static">
+          <div class="icon"><i class="fab fa-btc"></i></div>
+        </div>
+        <div class="button is-icon is-static">
+          <div class="icon"><i class="fab fa-btc"></i></div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <img src="https://cssninjastudio.github.io/krypton/img/icons/chained.svg" width="92">
+          <div class="title is-6">Chaining</div>
+          <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
+        </div>
+        <div class="column">
+          <img src="https://cssninjastudio.github.io/krypton/img/icons/chained.svg" width="92">
+          <div class="title is-6">Chaining</div>
+          <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
+        </div>
+        <div class="column">
+          <img src="https://cssninjastudio.github.io/krypton/img/icons/chained.svg" width="92">
+          <div class="title is-6">Chaining</div>
+          <p>Supercharged features to make you happy and lorem ipsum sit dolor amet</p>
+        </div>
+      </div>
+      <div class="is-pulsing">
+        <div class="button is-large is-success is-circle is-icon">
+          <div class="icon"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="has-text-centered">
+        <div class="divider is-primary"></div>
+        <div class="title is-4">
+          Decentralized Exchange
+        </div>
+        <p class="section-info mx-auto">
+          Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem
+          necessitatibus an vis. Ut sea pertinax perpetua, eruditi volumus quaestio ex mel, has ei tota homero.
+        </p>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-5">
+        </div>
+        <div class="column is-7">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-6">
+          <div class="title">Ico terms</div>
+          <ul>
+            <li>Pre Sale <br>Presale starts on Apr 8 2021 (9:00am GMT)</li>
+          </ul>
+        </div>
+        <div class="column is-6">
+          <div class="countdown is-primary">
+            <div class="level">
+              <div class="level-item is-flex-direction-column"><span>-5</span><span class="small">days</span></div>
+              <div class="level-item is-flex-direction-column">:</div>
+              <div class="level-item is-flex-direction-column"><span>-5</span><span class="small">Hours</span></div>
+              <div class="level-item is-flex-direction-column">:</div>
+              <div class="level-item is-flex-direction-column"><span>-5</span><span class="small">Minutes</span></div>
+              <div class="level-item is-flex-direction-column">:</div>
+              <div class="level-item is-flex-direction-column"><span>-5</span><span class="small">Seconds</span></div>
+            </div>
+            <div class="progress-container">
+              <div class="stop">
+                Presale
+              </div>
+              <div class="stop">
+                Softcap
+              </div>
+              <div class="stop">
+                Bonus
+              </div>
+              <progress class="progress is-link" value="30" max="100">30%</progress>
+            </div>
+            <div class="has-text-centered">
+              <div class="button is-large is-rounded">Join the ICO now</div>
+              <div class="icons">
+                <div class="icon">
+                  <div class="icon">
+                    <div class="fab fa-btc"></div>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div class="icon">
+                    <div class="fab fa-btc"></div>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div class="icon">
+                    <div class="fab fa-btc"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-3">
+          <div class="card team-card">
+            <div class="animated-profile">
+              <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Track -->
+                <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431"
+                  r="15.91549431"></circle>
+                <!-- Stroke -->
+                <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round"
+                  fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+              </svg>
+              <img class="is-real" src="images/john.jpg" alt="Jhon">
+              <img class="is-sketch" src="images/john.svg" alt="Jhon">
+            </div>
+            <div class="card-content">
+              <div class="title is-5">John Cample</div>
+              <div class="subtitle is-6">Somthing</div>
+              <p class="content">
+                John is a Crypto enthusiast. He was one of the first bolckchain actors in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="card team-card">
+            <div class="animated-profile">
+              <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Track -->
+                <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431"
+                  r="15.91549431"></circle>
+                <!-- Stroke -->
+                <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round"
+                  fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+              </svg>
+              <img class="is-real" src="images/john.jpg" alt="Jhon">
+              <img class="is-sketch" src="images/john.svg" alt="Jhon">
+            </div>
+            <div class="card-content">
+              <div class="title is-5">John Cample</div>
+              <div class="subtitle is-6">Somthing</div>
+              <p class="content">
+                John is a Crypto enthusiast. He was one of the first bolckchain actors in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="card team-card">
+            <div class="animated-profile">
+              <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Track -->
+                <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431"
+                  r="15.91549431"></circle>
+                <!-- Stroke -->
+                <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round"
+                  fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+              </svg>
+              <img class="is-real" src="images/john.jpg" alt="Jhon">
+              <img class="is-sketch" src="images/john.svg" alt="Jhon">
+            </div>
+            <div class="card-content">
+              <div class="title is-5">John Cample</div>
+              <div class="subtitle is-6">Somthing</div>
+              <p class="content">
+                John is a Crypto enthusiast. He was one of the first bolckchain actors in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-3">
+          <div class="card team-card">
+            <div class="animated-profile">
+              <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Track -->
+                <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431"
+                  r="15.91549431"></circle>
+                <!-- Stroke -->
+                <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round"
+                  fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+              </svg>
+              <img class="is-real" src="images/john.jpg" alt="Jhon">
+              <img class="is-sketch" src="images/john.svg" alt="Jhon">
+            </div>
+            <div class="card-content">
+              <div class="title is-5">John Cample</div>
+              <div class="subtitle is-6">Somthing</div>
+              <p class="content">
+                John is a Crypto enthusiast. He was one of the first bolckchain actors in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="card team-card">
+            <div class="animated-profile">
+              <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Track -->
+                <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431"
+                  r="15.91549431"></circle>
+                <!-- Stroke -->
+                <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round"
+                  fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+              </svg>
+              <img class="is-real" src="images/john.jpg" alt="Jhon">
+              <img class="is-sketch" src="images/john.svg" alt="Jhon">
+            </div>
+            <div class="card-content">
+              <div class="title is-5">John Cample</div>
+              <div class="subtitle is-6">Somthing</div>
+              <p class="content">
+                John is a Crypto enthusiast. He was one of the first bolckchain actors in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="card team-card">
+            <div class="animated-profile">
+              <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" width="140" height="140"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- Track -->
+                <circle class="circle-chart-background" stroke-width="1" fill="none" cx="16.91549431" cy="16.91549431"
+                  r="15.91549431"></circle>
+                <!-- Stroke -->
+                <circle class="circle-chart-circle" stroke-width="1" stroke-dasharray="33,100" stroke-linecap="round"
+                  fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+              </svg>
+              <img class="is-real" src="images/john.jpg" alt="Jhon">
+              <img class="is-sketch" src="images/john.svg" alt="Jhon">
+            </div>
+            <div class="card-content">
+              <div class="title is-5">John Cample</div>
+              <div class="subtitle is-6">Somthing</div>
+              <p class="content">
+                John is a Crypto enthusiast. He was one of the first bolckchain actors in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <section class="accordions">
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Hello World</p>
+                <button class="toggle" aria-label="toggle"></button>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
+                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+                  purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis
+                  lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+                  magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Hello World</p>
+                <button class="toggle" aria-label="toggle"></button>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
+                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+                  purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis
+                  lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+                  magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                </div>
+              </div>
+            </article>
+            <article class="accordion">
+              <div class="accordion-header toggle">
+                <p>Hello World</p>
+                <button class="toggle" aria-label="toggle"></button>
+              </div>
+              <div class="accordion-body">
+                <div class="accordion-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
+                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+                  purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis
+                  lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
+                  magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                </div>
+              </div>
+            </article>
+          </section>
+
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns is-centered">
+      <div class="column is-5">
+        <div class="field">
+          <div class="control is-material">
+            <input class="input" type="text" placeholder="Text input">
+            <label class="label">Name</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control is-material">
+            <input class="input" type="text" placeholder="Text input">
+            <label class="label">Email</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control is-material">
+            <textarea cols="30" rows="10" class="textarea has-fixed-size"></textarea>
+            <label class="label">Message</label>
+          </div>
+        </div>
+        <div class="field has-text-centered">
+          <div class="button is-primary is-medium">Send Message</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
+  <script src="particles.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+    var accordions = bulmaAccordion.attach();
+    setTimeout(function () {
+      document.querySelector('.pageloader').classList.remove('is-active')
+    }, 5000)
+  </script>
+
+</body>
+
+</html>

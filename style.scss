@@ -1,0 +1,193 @@
+$text-color: white;
+$primary: #1c004c;
+
+body {
+    color: $text-color;
+    background: url('https://cssninjastudio.github.io/krypton/img/bg/gradient-left-darker.png') repeat-y top left, url('https://cssninjastudio.github.io/krypton/img/bg/gradient-right-darker.png') repeat-y top right, $primary;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.title,
+.subtitle {
+    color: $text-color;
+}
+
+.hero.is-primary {
+    background: transparent;
+}
+
+.navbar {
+    .navbar-item {
+        &>.button {
+            &.is-primary {
+                background: transparent;
+            }
+        }
+    }
+}
+
+.has-no-text-decoraction {
+    text-decoration: none !important;
+}
+
+.button.is-primary:not(.is-text),
+.button.is-signup,
+.navbar .navbar-item>.button.is-primary.is-signup {
+    background: linear-gradient(to top, #7F00FF, #3f00fc);
+
+    span {
+        z-index: 1;
+    }
+
+    &.is-skewed {
+        transform: skewX(-18deg);
+
+        span {
+            transform: skew(18deg);
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background: linear-gradient(to right, #7F00FF, #3f00fc);
+        transition: all .6s ease-out;
+    }
+
+    &:hover::after {
+        opacity: 0;
+    }
+}
+
+.is-pulsing {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    position: relative;
+
+    &>* {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+        width: 30px;
+        height: 30px;
+        // background: rgb(99, 132, 255);
+        background: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        border-radius: 50%;
+        z-index: 0;
+        transform: scale(1);
+        opacity: 1;
+        animation: plusing 1s ease-out infinite;
+
+        @keyframes plusing {
+            to {
+                transform: scale(4);
+            }
+        }
+    }
+}
+
+
+.button {
+    &.is-circle {
+        border-radius: 50%;
+    }
+}
+
+.button:not(.is-icon),
+.button.is-medium {
+    text-transform: uppercase;
+    font-size: 12px;
+    min-width: 130px;
+    min-height: 40px;
+    position: relative;
+}
+
+.button.is-medium {
+    min-width: 154px;
+    min-height: 52px;
+}
+
+.team-card {
+    background-color: lighten($primary, 5%);
+    padding-top: 40px;
+
+    .animated-profile {
+        position: relative;
+        height: 140px;
+
+        .circle-chart,
+        .is-sketch,
+        .is-real {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .circle-chart {
+            transform: translate(-50%, -50%) scale(1.3);
+
+            .circle-chart-background {
+                stroke: rgba(255, 255, 255, .3);
+            }
+
+            .circle-chart-circle {
+                opacity: 0;
+                stroke: white;
+            }
+        }
+
+        .is-real {
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+
+        .is-real,
+        .is-sketch {
+            transition: opacity .4s ease-out;
+        }
+
+        .circle-chart-circle {
+            transition: all 1s ease-in-out;
+        }
+
+        .is-real {
+            opacity: 1;
+        }
+
+        .is-sketch {
+            opacity: 0;
+        }
+
+        .circle-chart-circle {
+            opacity: 1 !important;
+            stroke-dasharray: 100, 100;
+        }
+    }
+}
